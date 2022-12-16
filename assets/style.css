@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+  }
+
+:root {
+
+    --color-Main-text-color: rgba(232, 102, 236, 1);
+    --color-pretext-color: white;
+
+}
+
+Body {
+    background-color: rgb(56, 56, 56);
+    color: var(--color-Main-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+main {
+
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+    align-content: center;
+
+  
+}
+h1 {
+    
+    font-size: 250%;
+    text-align: center;
+    line-height: 1.5;
+
+    
+}
+
+header p {
+
+    color: var(--color-pretext-color);
+    text-align: center;
+    margin: 20px 10% 50px 10%;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns:
+    repeat(12, 1fr)
+}
+
+.linear-gradient-background {
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+}
+
+section {
+    display: block;
+}
+.code-card {
+
+    border:2px dashed var(--color-pretext-color);
+    margin: 15px;
+    flex: 1 0 0;
+    width: 100%;
+    min-width: 400px;
+   
+}
+
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover, .code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
