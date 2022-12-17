@@ -22,7 +22,6 @@ main {
     padding: 50px;
     flex-wrap: wrap;
     align-content: center;
-
   
 }
 h1 {
@@ -32,6 +31,23 @@ h1 {
     line-height: 1.5;
 
     
+}
+
+h2 {
+    font-size:175%;
+    padding:18px;
+    border:1px solid var(--color-pretext-color);
+    width:80%;
+    background-color:rgb(56, 56, 56);
+    margin:auto;
+}
+
+p {
+    margin:auto;
+    margin-top:18px;
+    margin-bottom:18px;
+    padding:5px;
+    width:90%;
 }
 
 header p {
@@ -83,6 +99,7 @@ section {
 .code-card .card-header {
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
+    width: 90%;
 }
 
 .code-card:hover, .code-card:hover .card-header {
@@ -92,4 +109,22 @@ section {
 .card-header {
     position: relative;
     margin-top: -20px;
+}
+
+pre {
+    user-select:all;
+    color:var(--color-pretext-color);
+    white-space:pre-wrap;
+    width:90%;
+    border-radius:8px;
+    margin:auto;
+    margin-bottom:18px;
+}
+
+footer p {
+    text-align:center;
+}
+
+#heart {
+    color:red;
 }
